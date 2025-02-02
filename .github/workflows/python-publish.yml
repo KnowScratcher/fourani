@@ -30,7 +30,7 @@ jobs:
         run: |
           # NOTE: put your own distribution build steps here.
           python -m pip install pyinstaller
-          python -m pyinstaller -F -i "favicon.ico" main.py
+          pyinstaller -F -i "favicon.ico" main.py
 
       - name: Upload distributions
         uses: actions/upload-artifact@v4
